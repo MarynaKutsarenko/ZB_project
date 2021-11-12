@@ -1,0 +1,48 @@
+@import '../../../../../assets/scss/variables.scss';
+
+.navbar {
+  color: $bold-color;
+
+  .menu-list {
+    width: 100%;
+
+    background-image:
+      url('../../../../../assets/images/sidebar-img/electronics_icon.svg'),
+      url('../../../../../assets/images/filters-img/arrow_down_icon.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 0;
+
+    .inner-menu {
+      padding-left: 35px;
+      color: $main-color-light;
+    }
+
+    .list-item {
+
+      ._visibility {
+        display: none;
+      }
+
+      .item-link {
+        width: 100%;
+        display: inline-block;
+        cursor: pointer;
+        height: 20px;
+        padding: 0 30px;
+      }
+
+      .item-link:hover {
+        fill: $blue-bg;
+        opacity: 0.5;
+        text-decoration: none;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+      }
+    }
+
+  }
+
+}

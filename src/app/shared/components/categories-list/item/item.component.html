@@ -1,0 +1,23 @@
+<nav class="navbar p-2">
+
+  <ul class="menu-list mb-2">
+    <li class="list-item"
+    (click)="dropMenu()"
+    >
+      <a class="item-link " href="#">
+          {{ item.title }}
+      </a>
+
+      <ul class="inner-menu _visibility" #navdrop id="navdrop">
+        <li class="list-item " 
+          *ngFor="let good of item.goods">
+          <a class="item-link p-2" href="#">
+            {{ good }}
+          </a>
+        </li>
+      </ul>
+
+    </li>
+  </ul>
+
+</nav>

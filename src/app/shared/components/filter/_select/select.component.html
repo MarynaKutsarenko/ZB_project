@@ -1,0 +1,13 @@
+<div class="wrapper" [class]="option.type">
+    <select class="selectpicker p-3">
+
+    <option class="select-title">
+      {{ option.title }}
+    </option>
+  
+    <option *ngFor="let option of option.options">
+      {{ option }}
+    </option>
+  
+  </select>
+</div>

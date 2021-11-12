@@ -1,0 +1,24 @@
+<div class="main d-flex justify-content-between align-items-center mb-4">
+
+    <app-select 
+      class="filter-item" 
+      *ngFor="let option of options;
+      let even = even" 
+      [option]="option" 
+      [ngClass]="{'even': even}"
+    >
+    </app-select>
+
+    <div class="btn-group d-flex align-items-center">
+
+      <button class="btn _grid btn-grid p-3">
+        <img src="../../../assets/images/filters-img/view_map.svg" />
+      </button>
+
+      <button class="btn _active btn-grid p-3">
+        <img src="../../../assets/images/filters-img/view_list.svg" />
+      </button>
+
+    </div>
+
+</div>
