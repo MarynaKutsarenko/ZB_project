@@ -1,12 +1,12 @@
 export const filters = [
    {
     "title": "Sort ads via",
-    "options": ["price", "Status", "5 km", "$", "city"],
+    "options": [{title: "price", value: "price"}, {title: "Status", value: "Status"}, {titlle: "5 km", value: "5 km"}, {title: "$", value: "$"}, {title: "city", value: "city"}],
     "type": "categoris"  
    },
    {
     "title":"Ukraine, Kiev, Sh...",
-    "options": ["Kharkov", "Copenhagen", "Madrid"],
+    "options": [{title: "Kharkov", value: "Kharkov"}, {title: "Copenhagen", value: "Copenhagen"}, {title: "Madrid", value: "Madrid"}],
     "image": "../../assets/images/filters-img/location_icon.svg",
     "type": "location"    
    },

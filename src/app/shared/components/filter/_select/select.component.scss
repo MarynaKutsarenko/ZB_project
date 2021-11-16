@@ -1,34 +1,29 @@
 @import '../../../../../assets/scss/variables.scss';
-.wrapper {
-    position: relative;
-    &.location {
-        color: green;
-    }
-    .selectpicker {
-        background: $bg-wite;
-        border: $border;
-        border-radius: 10px 10px 0px 0px;
-        appearance: none;
-        cursor: pointer;
-        transition: .5s;
-        -webkit-transition: .5s;
-        -moz-transition: .5s;
-        -ms-transition: .5s;
-        -o-transition: .5s;
-        &:hover {
-            opacity: .5;
-            transition: .5s;
-            -webkit-transition: .5s;
-            -moz-transition: .5s;
-            -ms-transition: .5s;
-            -o-transition: .5s;
-        }
-    }
-}
 
-.wrapper::after {
-    content: '>';
-    position: absolute;
-    top: 38%;
-    right: 0;
+.wrapper {
+
+  .selectpicker {
+    padding: 16px 25px;
+    background: $bg-wite;
+    border: $border;
+    border-radius: 10px 10px 0px 0px;
+    appearance: none;
+    cursor: pointer;
+
+    &.location {
+      background-image: url('../../../../../assets/images/filters-img/location_icon.svg');
+    }
+
+    &.distance {
+      background-image: url('../../../../../assets/images/filters-img/radius_icon.svg');
+    }
+
+    &.location,
+    &.distance {
+      background-repeat: no-repeat;
+      background-position: 5px 45%;
+    }
+
+  }
+
 }

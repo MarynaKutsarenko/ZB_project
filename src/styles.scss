@@ -4,12 +4,10 @@
 /* Importing Bootstrap SCSS file. */
 
 @import '~bootstrap/scss/bootstrap';
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
 @import './assets/scss/variables.scss';
-
 @import '~font-awesome/scss/font-awesome.scss';
+
 
 *,
 ::before,
@@ -39,7 +37,6 @@ img {
 body {
   width: 1200px;
   margin: auto;
-  background: $main-bg;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -69,3 +66,4 @@ body {
     -o-transition: 0.5s;
   }
 }
+

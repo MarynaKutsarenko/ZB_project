@@ -1,6 +1,8 @@
 export interface Select {
    "title": string,
-   "options": Array<string | number | boolean>,
+   "options": any,
    "image"?: string, 
    "type": string
 }
+
+// "options": Array<string | number | boolean>,
