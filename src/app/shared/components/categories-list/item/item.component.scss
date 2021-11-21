@@ -5,34 +5,25 @@
 
   .menu-list {
     width: 100%;
+    background-image: url('../../../../../assets/images/filters-img/arrow_down_icon.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 9px;
+
 
     .inner-menu {
       padding-left: 35px;
       color: $main-color-light;
     }
 
-    &.electronics {
-      background-image: 
-        url('../../../../../assets/images/sidebar-img/electronics_icon.svg'),
-        url('../../../../../assets/images/filters-img/arrow_down_icon.svg');
-    }
-
-    &.other {
-      background-image: 
-        url('../../../../../assets/images/sidebar-img/Vector.svg'),
-        url('../../../../../assets/images/filters-img/arrow_down_icon.svg');
-    }
-
-    &.electronics,
-    &.other {
-      
-      background-repeat: no-repeat;
-      background-position: 0 0, 100% 0;
+    .list-icon {
+      fill: #99CC00;
+      width: 21px;
+      height: 21px;
     }
 
     .list-item {
 
-      ._visibility {
+      ._isVisibile {
         display: none;
       }
 

@@ -9,12 +9,12 @@ import { Filter } from '../../../../interface/categories';
 export class ItemComponent implements OnInit {
   @Input() item: Filter = {} as Filter; 
 
-  @ViewChild ('navdrop') navdrop: ElementRef | undefined;; 
+  @ViewChild ('navdrop') navdrop: ElementRef | undefined;
 
   constructor() { }
 
   public dropMenu() {
-    this.navdrop?.nativeElement.classList.toggle('_visibility');
+    this.navdrop?.nativeElement.classList.toggle('_isVisibile');
   }
 
   ngOnInit(): void {
