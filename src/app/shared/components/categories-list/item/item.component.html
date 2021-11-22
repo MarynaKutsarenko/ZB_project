@@ -2,31 +2,17 @@
 
   <ul class="menu-list mb-2" 
     [class]="item.type">
-
-    <li class="list-item" 
+    *ngIf="other"
+    <li class="list-item " 
       (click)="dropMenu()">
-
-      <span>
-        <svg class="list-icon">
-          <use xlink:href="../../../../../assets/images/sidebar-img/sprite.svg#electronix"></use>
-        </svg>
-      </span>
-
-      <span>
-        <svg class="list-icon">
-          <use xlink:href="../../../../../assets/images/sidebar-img/sprite.svg#ico-dress"></use>
-        </svg>
-      </span>
 
       <a class="item-link " href="#">
         {{ item.title }}
       </a>
 
-      <ul class="inner-menu 
-        _isVisibile" 
+      <ul class="inner-menu" 
         #navdrop id="navdrop">
-        <li 
-          class="list-item " 
+        <li class="list-item " 
           *ngFor="let good of item.goods"
         >
           <a class="item-link p-2" href="#">
@@ -40,3 +26,16 @@
   </ul>
 
 </nav>
+
+<ng-template #eletr>
+  <svg class="list-icon">
+    <use xlink:href="../../../../../assets/images/sidebar-img/sprite.svg#electronix"></use>
+  </svg>
+</ng-template>
+
+
+<ng-template #other>
+  <svg class="list-icon">
+    <use xlink:href="../../../../../assets/images/sidebar-img/sprite.svg#ico-dress"></use>
+  </svg>
+</ng-template>

@@ -13,6 +13,7 @@
     .inner-menu {
       padding-left: 35px;
       color: $main-color-light;
+      display: none;
     }
 
     .list-icon {
@@ -22,10 +23,6 @@
     }
 
     .list-item {
-
-      ._isVisibile {
-        display: none;
-      }
 
       .item-link {
         width: 100%;
@@ -45,6 +42,10 @@
         -ms-transition: 0.5s;
         -o-transition: 0.5s;
       }
+    }
+
+    ._opened {
+      display: block;
     }
 
   }

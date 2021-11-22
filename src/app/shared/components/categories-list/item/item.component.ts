@@ -14,7 +14,7 @@ export class ItemComponent implements OnInit {
   constructor() { }
 
   public dropMenu() {
-    this.navdrop?.nativeElement.classList.toggle('_isVisibile');
+    this.navdrop?.nativeElement.classList.toggle('_opened');
   }
 
   ngOnInit(): void {
