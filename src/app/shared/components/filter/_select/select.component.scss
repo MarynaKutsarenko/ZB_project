@@ -3,13 +3,16 @@
 .wrapper {
 
   .selectpicker {
-    padding: 16px 25px;
+    padding: 16px 10px 16px 10px;
     background: $bg-wite;
     border: $border;
     border-radius: 10px 10px 0px 0px;
-    appearance: none;
     cursor: pointer;
-
+    min-width: 80px;
+    margin-right: 20px;
+    line-height: 21px;
+    border-bottom: 0px;
+    
     &.location {
       background-image: url('../../../../../assets/images/filters-img/location_icon.svg');
     }
@@ -20,8 +23,13 @@
 
     &.location,
     &.distance {
+      padding-left: 25px;
       background-repeat: no-repeat;
       background-position: 5px 45%;
+    }
+
+    ng-option {
+      background: $bg-wite !important;
     }
 
   }

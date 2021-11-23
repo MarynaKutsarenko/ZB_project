@@ -1,8 +1,8 @@
+import { Options } from "./options";
+
 export interface Select {
    "title": string,
-   "options": any,
+   "options": Array<Options>,
    "image"?: string, 
    "type": string
 }
-
-// "options": Array<string | number | boolean>,

@@ -1,34 +1,60 @@
 export const filters = [
    {
     "title": "Sort ads via",
-    "options": [{title: "price", value: "price"}, {title: "Status", value: "Status"}, {titlle: "5 km", value: "5 km"}, {title: "$", value: "$"}, {title: "city", value: "city"}],
+      "options": [
+         { title: "price"},
+         { title: "Status"},
+         { title: "5 km"},
+         { title: "$"},
+         { title: "city"}
+      ],
     "type": "categoris"  
    },
    {
     "title":"Ukraine, Kiev, Sh...",
-    "options": [{title: "Kharkov", value: "Kharkov"}, {title: "Copenhagen", value: "Copenhagen"}, {title: "Madrid", value: "Madrid"}],
+      "options": [
+         { title: "Kharkov"},
+         { title: "Copenhagen"},
+         { title: "Madrid" }
+      ],
     "image": "../../assets/images/filters-img/location_icon.svg",
     "type": "location"    
    },
    {
     "title": "5 km",
-    "options": ["10 km", "20 km", "30 km"],
+      "options": [
+         { title: "10 km" },
+         { title: "20 km" },
+         { title: "30 km" }
+      ],
     "image": "../../assets/images/filters-img/radius_icon.svg",
     "type": "distance"
    },
    {
     "title": "$",
-    "options": ["usd", "euro", "hryvnia"],
+      "options": [
+         { title: "usd" },
+         { title: "euro" },
+         { title: "hryvnia" }
+      ],
     "type": "currency"
    },
    {
     "title": "Price",
-    "options": [100, 200, 300, 400],
+      "options": [
+         { title: 100 },
+         { title: 200 },
+         { title: 300 },
+         { title: 400 }
+      ],
     "type": "price"
    },
    {
     "title": "Status",
-    "options": [true, false],
+      "options": [
+         { title: true },
+         { title: false }
+      ],
     "type": "status"
    }
 ]

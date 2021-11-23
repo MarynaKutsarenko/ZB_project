@@ -7,8 +7,7 @@
     width: 100%;
     background-image: url('../../../../../assets/images/filters-img/arrow_down_icon.svg');
     background-repeat: no-repeat;
-    background-position: 100% 9px;
-
+    background-position: 100% 5px;
 
     .inner-menu {
       padding-left: 35px;
@@ -16,20 +15,24 @@
       display: none;
     }
 
-    .list-icon {
-      fill: #99CC00;
-      width: 21px;
-      height: 21px;
-    }
-
     .list-item {
+      padding-right: 15px;
 
       .item-link {
         width: 100%;
         display: inline-block;
         cursor: pointer;
-        height: 20px;
-        padding: 0 30px;
+      }
+
+      .list-ico {
+        float: left;
+      }
+
+      .icon {
+        fill: #99CC00;
+        width: 21px;
+        height: 21px;
+        margin-right: 10px;
       }
 
       .item-link:hover {
@@ -42,6 +45,7 @@
         -ms-transition: 0.5s;
         -o-transition: 0.5s;
       }
+
     }
 
     ._opened {

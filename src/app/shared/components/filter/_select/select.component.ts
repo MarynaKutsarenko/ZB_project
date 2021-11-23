@@ -9,6 +9,7 @@ import { Select } from '../../../../interface/select';
 export class SelectComponent implements OnInit {
   @Input() option: Select = {} as Select;
 
+
   constructor() { }
 
   ngOnInit(): void {

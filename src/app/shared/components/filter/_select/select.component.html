@@ -1,15 +1,30 @@
 <div class="wrapper" >
 
-  <ng-select
+  <!-- <ng-select
     class="selectpicker" 
     [class]="option.type"  
     [items]="option.options"
+    [(ngModel)]="option.title"
+    bindLabel="title" 
+    bindValue="title"
+    [clearable]= false
 
-    [placeholder]= "option.title" 
-    [(ngModel)]= "option.options"
   >
-  </ng-select>
+  </ng-select> -->
+
+  <ng-select
+      class="selectpicker" 
+      [class]="option.type"  
+      [(ngModel)]="option.title"
+      [clearable]= false
+    >
+    <ng-option
+      class="item-option" 
+      *ngFor="let item of option.options" 
+      [value]="item.title"
+    >
+      {{item.title}}
+    </ng-option>
+</ng-select>
 
 </div>
-<!-- [placeholder]= "option.title"     bindLabel="title" 
-    bindValue="value" -->
