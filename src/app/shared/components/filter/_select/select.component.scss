@@ -1,6 +1,7 @@
 @import '../../../../../assets/scss/variables.scss';
 
 .wrapper {
+  position: relative;
 
   .selectpicker {
     padding: 16px 10px 16px 10px;
@@ -9,29 +10,82 @@
     border-radius: 10px 10px 0px 0px;
     cursor: pointer;
     min-width: 80px;
-    margin-right: 20px;
+    margin-right: 10px;
     line-height: 21px;
     border-bottom: 0px;
-    
+
+    &.categoris {
+      width: 130px;
+    }
+
+      &.categoris,
+      &.distance {
+      .icon {
+        fill: green;
+      }
+    }
+
     &.location {
+      width: 170px;
       background-image: url('../../../../../assets/images/filters-img/location_icon.svg');
     }
 
     &.distance {
+      width: 110px;
       background-image: url('../../../../../assets/images/filters-img/radius_icon.svg');
     }
 
     &.location,
     &.distance {
-      padding-left: 25px;
+      padding-left: 30px;
       background-repeat: no-repeat;
-      background-position: 5px 45%;
+      background-position: 7px 45%;
     }
 
-    ng-option {
-      background: $bg-wite !important;
+    &.currency {
+      width: 40px;
     }
 
+    &.price {
+      width: 75px;
+    }
+
+    &.status {
+      width: 95px;
+    }
+  }
+
+  .list-ico {
+    position: absolute;
+    top: 20px;
+    right: 16px;
+
+    .icon {
+      fill: $green-bg;
+      width: 12px;
+      height: 7px;
+    }
+  }
+
+}
+
+::ng-deep {
+  .ng-dropdown-panel-items {
+    background: $bg-wite;
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    left: -10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #6c757d;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    .ng-option:hover {
+      opacity: .5;
+      color: #007bff;
+    }
   }
 
 }

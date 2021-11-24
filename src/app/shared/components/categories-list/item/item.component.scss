@@ -5,14 +5,27 @@
 
   .menu-list {
     width: 100%;
-    background-image: url('../../../../../assets/images/filters-img/arrow_down_icon.svg');
-    background-repeat: no-repeat;
-    background-position: 100% 5px;
+
+    .holder-ico {
+      position: absolute;
+      top: 7px;
+      right: 10px;
+
+      .ico-arr,
+      ._forIco {
+        width: 12px;
+        height: 7px;
+      }
+    }
 
     .inner-menu {
       padding-left: 35px;
       color: $main-color-light;
       display: none;
+    }
+
+    ._opened {
+      display: block;
     }
 
     .list-item {
@@ -28,7 +41,7 @@
         float: left;
       }
 
-      .icon {
+      .ico {
         fill: #99CC00;
         width: 21px;
         height: 21px;
@@ -48,8 +61,12 @@
 
     }
 
-    ._opened {
-      display: block;
+    ._forIco {
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
     }
 
   }

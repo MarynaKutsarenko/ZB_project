@@ -3,21 +3,37 @@
   <ul class="menu-list mb-2" 
     [class]="item.type"
   >
-    <li class="list-item" 
+    <li 
+      class="list-item"
       (click)="dropMenu()">
 
       <a class="item-link" href="#">
 
         <span class="list-ico">
-          <svg class="icon">
-            <use xlink:href="../../../../../assets/images/sidebar-img/sprite.svg#electronix"></use>
+          <svg class="ico">
+            <use 
+              [attr.fill]="isActive ? '#6699FF' : '#99CC00' "
+              xlink:href="../../../../../assets/images/sidebar-img/sprite.svg#electronix">
+            </use>
           </svg>
         </span>
 
         {{ item.title }}
+
+        <span class="holder-ico">
+          <svg [class]="isActive ? '_forIco' : 'ico-arr'">
+            <use 
+              [attr.fill]="isActive ? '#6699FF' : '#99CC00' "
+              xlink:href="../../../../../assets/images/sidebar-img/sprite.svg#arr_down-ico">
+            </use>
+          </svg>
+        </span>
       </a>
 
-      <ul class="inner-menu" #navdrop id="navdrop">
+      <ul 
+        [class]="item.showed ? 'inner-menu + _opened' : 'inner-menu'"
+        #navdrop id="navdrop"
+      >
         <li class="list-item" 
           *ngFor="let good of item.goods"
         >

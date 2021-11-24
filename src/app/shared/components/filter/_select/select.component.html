@@ -1,6 +1,6 @@
 <div class="wrapper" >
 
-  <!-- <ng-select
+  <ng-select
     class="selectpicker" 
     [class]="option.type"  
     [items]="option.options"
@@ -8,23 +8,13 @@
     bindLabel="title" 
     bindValue="title"
     [clearable]= false
-
   >
-  </ng-select> -->
+  </ng-select>
 
-  <ng-select
-      class="selectpicker" 
-      [class]="option.type"  
-      [(ngModel)]="option.title"
-      [clearable]= false
-    >
-    <ng-option
-      class="item-option" 
-      *ngFor="let item of option.options" 
-      [value]="item.title"
-    >
-      {{item.title}}
-    </ng-option>
-</ng-select>
+  <span class="list-ico">
+    <svg class="icon">
+      <use xlink:href="../../../../../assets/images/sidebar-img/sprite.svg#arr_down-ico"></use>
+    </svg>
+  </span>
 
 </div>

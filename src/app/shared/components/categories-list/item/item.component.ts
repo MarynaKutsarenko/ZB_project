@@ -7,13 +7,16 @@ import { Filter } from '../../../../interface/categories';
   styleUrls: ['./item.component.scss']
 })
 export class ItemComponent implements OnInit {
-  @Input() item: Filter = {} as Filter; 
+  public isActive: boolean = false;
 
+  @Input() item: Filter = {} as Filter;
+  
   @ViewChild ('navdrop') navdrop: ElementRef | undefined;
 
   constructor() { }
 
   public dropMenu() {
+    this.isActive = !this.isActive;
     this.navdrop?.nativeElement.classList.toggle('_opened');
   }
 
