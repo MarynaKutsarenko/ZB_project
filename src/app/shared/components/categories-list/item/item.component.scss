@@ -12,7 +12,7 @@
       right: 10px;
 
       .ico-arr,
-      ._forIco {
+      ._rotate{
         width: 12px;
         height: 7px;
       }
@@ -42,7 +42,6 @@
       }
 
       .ico {
-        fill: #99CC00;
         width: 21px;
         height: 21px;
         margin-right: 10px;
@@ -61,7 +60,7 @@
 
     }
 
-    ._forIco {
+    ._rotate {
       transform: rotate(180deg);
       -webkit-transform: rotate(180deg);
       -moz-transform: rotate(180deg);

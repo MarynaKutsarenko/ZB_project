@@ -11,7 +11,7 @@ export class ItemComponent implements OnInit {
 
   @Input() item: Filter = {} as Filter;
   
-  @ViewChild ('navdrop') navdrop: ElementRef | undefined;
+  @ViewChild('navdrop')navdrop!: ElementRef;
 
   constructor() { }
 

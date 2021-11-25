@@ -17,11 +17,11 @@
             </use>
           </svg>
         </span>
-
+                      
         {{ item.title }}
 
         <span class="holder-ico">
-          <svg [class]="isActive ? '_forIco' : 'ico-arr'">
+          <svg [class]="isActive ? '_rotate' : 'ico-arr'">
             <use 
               [attr.fill]="isActive ? '#6699FF' : '#99CC00' "
               xlink:href="../../../../../assets/images/sidebar-img/sprite.svg#arr_down-ico">
@@ -31,7 +31,7 @@
       </a>
 
       <ul 
-        [class]="item.showed ? 'inner-menu + _opened' : 'inner-menu'"
+        class="inner-menu"
         #navdrop id="navdrop"
       >
         <li class="list-item" 
