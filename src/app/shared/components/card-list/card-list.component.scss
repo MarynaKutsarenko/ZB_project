@@ -1,5 +1,66 @@
+@import '../../../../assets/scss/variables.scss';
+
 .main {
   margin-bottom: 100px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  .wrapper {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);  
+  }
 }
+
+::ng-deep {
+  pagination-controls {
+    .ngx-pagination .current {
+      padding: 6px 10px;
+      background: $green-bg;
+
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+
+       transition: 0.5s;
+        -webkit-transition: 0.5s;
+       -moz-transition: 0.5s;
+       -ms-transition: 0.5s;
+       -o-transition: 0.5s;
+    }
+
+    .ngx-pagination li {
+      margin-right: 10px;
+    }
+
+    .ngx-pagination a:hover {
+      opacity: 0.5;
+      padding: 6px 10px;
+      background: $green-bg;
+
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+
+      transition: 0.5s;
+      -webkit-transition: 0.5s;
+       -moz-transition: 0.5s;
+       -ms-transition: 0.5s;
+       -o-transition: 0.5s;
+    }
+
+    .pagination-previous,
+    .pagination-next{
+       color: #BDBDBD;
+       transition: 0.5s;
+       -webkit-transition: 0.5s;
+       -moz-transition: 0.5s;
+       -ms-transition: 0.5s;
+       -o-transition: 0.5s;
+}
+
+  }
+
+}
+

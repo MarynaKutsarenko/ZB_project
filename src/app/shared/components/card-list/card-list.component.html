@@ -1,9 +1,21 @@
-<div class="main d-flex flex-wrap justify-content-between">
+<div class="main d-flex flex-column">
 
-  <app-card 
-    class="mb-2" 
-    *ngFor="let card of cards" 
-    [card]="card">
-  </app-card>
+  <div class="wrapper d-flex flex-wrap justify-content-between">   
+    <app-card 
+      class="mb-2" 
+      *ngFor="let card of cards |
+      paginate: { 
+        itemsPerPage: 20, 
+        currentPage: page 
+      }"
+      [card]="card"
+    >
+    </app-card>
+  </div>
+  <pagination-controls
+    class="align-self-end mt-4" 
+    (pageChange)="page = $event"
+  >
+  </pagination-controls>
 
 </div>

@@ -4,6 +4,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule } from '@angular/forms';
 
+import { NgxPaginationModule } from 'ngx-pagination';
+
 import { SelectComponent } from './components/filter/_select/select.component';
 import { FilterListComponent } from './components/filter/filter-list.component';
 import { CardListComponent } from './components/card-list/card-list.component';
@@ -25,7 +27,8 @@ import { ItemComponent } from './components/categories-list/item/item.component'
     CommonModule,
     NgbModule,
     NgSelectModule,
-    FormsModule
+    FormsModule,
+    NgxPaginationModule
   ],
   exports: [
     FilterListComponent,
@@ -34,3 +37,5 @@ import { ItemComponent } from './components/categories-list/item/item.component'
   ]
 })
 export class SharedModule { }
+
+    // NgxPaginationModule,

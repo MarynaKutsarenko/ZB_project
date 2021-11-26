@@ -12,8 +12,9 @@ export class CardListComponent implements OnInit {
   public cards: Card[] = cards;
   public item: Card = {} as Card;
 
+  public page: number = 1;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
   }
