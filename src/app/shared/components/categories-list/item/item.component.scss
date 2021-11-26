@@ -3,8 +3,34 @@
 .navbar {
   color: $bold-color;
 
-  .menu-list {
+  .menu-list { 
     width: 100%;
+    >.list-item {
+      padding-left: 35px;
+      min-height: 20px;
+    }
+
+    &.electronics {
+      background-image: url('../../../../../assets/images/sidebar-img/electronics_icon.svg');
+    }
+
+    &.other {
+      background-image: url('../../../../../assets/images/sidebar-img/Vector.svg');
+    }
+
+    ._active_elec-img {
+      background-image: url('../../../../../assets/images/sidebar-img/electro_icon.svg');
+    }
+
+    ._active_other-img {
+      background-image: url('../../../../../assets/images/sidebar-img/dres-active.svg');
+    }
+
+    &.electronics,
+    &.other {
+      background-position: 7px 0px;
+      background-repeat: no-repeat;
+    }
 
     .holder-ico {
       position: absolute;
@@ -19,7 +45,7 @@
     }
 
     .inner-menu {
-      padding-left: 35px;
+      padding-left: 5px;
       color: $main-color-light;
       display: none;
     }
@@ -29,22 +55,12 @@
     }
 
     .list-item {
-      padding-right: 15px;
+      padding-right: 10px;
 
       .item-link {
         width: 100%;
         display: inline-block;
         cursor: pointer;
-      }
-
-      .list-ico {
-        float: left;
-      }
-
-      .ico {
-        width: 21px;
-        height: 21px;
-        margin-right: 10px;
       }
 
       .item-link:hover {
@@ -57,7 +73,6 @@
         -ms-transition: 0.5s;
         -o-transition: 0.5s;
       }
-
     }
 
     ._rotate {

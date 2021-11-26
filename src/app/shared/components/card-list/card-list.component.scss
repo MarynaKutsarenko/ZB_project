@@ -20,12 +20,6 @@
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
-
-       transition: 0.5s;
-        -webkit-transition: 0.5s;
-       -moz-transition: 0.5s;
-       -ms-transition: 0.5s;
-       -o-transition: 0.5s;
     }
 
     .ngx-pagination li {
@@ -33,7 +27,6 @@
     }
 
     .ngx-pagination a:hover {
-      opacity: 0.5;
       padding: 6px 10px;
       background: $green-bg;
 
@@ -42,23 +35,18 @@
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
-
-      transition: 0.5s;
-      -webkit-transition: 0.5s;
-       -moz-transition: 0.5s;
-       -ms-transition: 0.5s;
-       -o-transition: 0.5s;
     }
 
     .pagination-previous,
     .pagination-next{
-       color: #BDBDBD;
-       transition: 0.5s;
-       -webkit-transition: 0.5s;
-       -moz-transition: 0.5s;
-       -ms-transition: 0.5s;
-       -o-transition: 0.5s;
-}
+      color: #BDBDBD;
+    }
+
+    .pagination-previous a:hover,
+    .pagination-next a:hover {
+      background: inherit;
+      color: #000 !important;
+    }
 
   }
 
